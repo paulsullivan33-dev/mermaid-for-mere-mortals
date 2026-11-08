@@ -1,0 +1,30 @@
+t02 - CLI options actually run (mmdc 12.2.0)
+--- background transparent:
+Generating single mermaid chart
+-rw-rw---- 1 root root 21023 Nov  7 22:13 /home/hatch/workspace/.batch-351-363/scratch-mermaid/cli-tests/basic-transparent.png
+--- scale 2 (-s 2):
+Generating single mermaid chart
+basic-transparent.png 252 x 799
+basic-scale2.png 504 x 1598
+--- theme via CLI flag (-t dark):
+Generating single mermaid chart
+background-color: white
+background-color: white
+--- PDF output (-e pdf via extension):
+Generating single mermaid chart
+-rw-rw---- 1 root root 59664 Nov  7 22:13 /home/hatch/workspace/.batch-351-363/scratch-mermaid/cli-tests/basic.pdf
+%PDF-1.4
+--- Markdown input: mmdc extracts mermaid fences from a .md file
+Found 1 mermaid charts in Markdown input
+ ✅ ./sample-out-1.svg
+ ✅ /home/hatch/workspace/.batch-351-363/scratch-mermaid/cli-tests/sample-out.md
+-rw-rw---- 1 root root 196122 Nov  7 22:13 sample-out-1.svg
+-rw-rw---- 1 root root    102 Nov  7 22:13 sample-out.md
+-rw-rw---- 1 root root    123 Nov  7 22:13 sample.md
+# A page with a diagram
+
+Some prose before the diagram.
+
+![diagram](./sample-out-1.svg)
+
+Prose after.

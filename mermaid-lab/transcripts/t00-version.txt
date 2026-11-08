@@ -1,0 +1,9 @@
+t00 - versions
+node: v24.22.1
+npm: 10.9.4
+mermaid library (package.json):   "version": "12.3.0",
+@mermaid-js/mermaid-cli (package.json):   "version": "12.2.0",
+mmdc --version: 12.2.0
+install command: npm install @mermaid-js/mermaid-cli mermaid (in scratch-mermaid)
+diagram families present in mermaid/dist/diagrams/:
+agentflow architecture block c4 class common cynefin er error eventmodeling flowchart gantt git info ishikawa kanban mindmap packet pie quadrant-chart radar railroad requirement sankey sequence state swimlanes timeline treeView treemap usecase user-journey venn wardley xychart 

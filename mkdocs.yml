@@ -1,0 +1,36 @@
+site_name: Mermaid for Mere Mortals
+site_description: Diagrams written as plain text and drawn by a program. Flowcharts, sequence diagrams, class and state diagrams, schedules and journeys, each example rendered for real in the guide lab.
+site_url: https://paulsullivan33-dev.github.io/mermaid-for-mere-mortals/
+copyright: 'Part of <a href="https://paulsullivan33-dev.github.io/mere-mortals/">For Mere Mortals</a> · Text <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>, code MIT'
+
+# Guides live at the repo root (nice for GitHub browsing).
+# The deploy workflow copies them into docs/ before building.
+theme:
+  name: material
+
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+nav:
+  - Home: index.md
+  - What Mermaid Is: what-mermaid-is.md
+  - The Moving Parts: the-moving-parts.md
+  - Installing Mermaid: installing-mermaid.md
+  - Your First Diagram: your-first-diagram.md
+  - Flowcharts in Depth: flowcharts-in-depth.md
+  - Styling and Themes: styling-and-themes.md
+  - Sequence Diagrams: sequence-diagrams.md
+  - Structure Diagrams: structure-diagrams.md
+  - Planning Diagrams: planning-diagrams.md
+  - Diagrams in Markdown: diagrams-in-markdown.md
+  - The Command Line: the-command-line.md
+  - Real Jobs: real-jobs.md
+  - The Neighbours: the-neighbours.md
+  - Limits: limits.md
+  - Troubleshooting: troubleshooting.md
+  - Glossary: glossary.md
+  - Writing Criteria: criteria.md

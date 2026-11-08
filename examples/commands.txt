@@ -1,0 +1,89 @@
+mermaid — the distilled commands
+====================================================================
+Placeholders: <in>.mmd is a diagram source of yours;
+<out> is an image name of yours.
+Every command below is one the lab ran
+(transcripts in mermaid-lab/transcripts/)
+or names as documented-only in the guide.
+Unless your Chromium launches happily
+without it, every mmdc command carries
+-p puppeteer-config.json (chapter 3).
+
+INSTALL AND CHECK (chapter 3)
+--------------------------------------------------------------------
+  npm install @mermaid-js/mermaid-cli
+                                   # the CLI; expect a large
+                                   # download, it brings a
+                                   # Chromium to draw with
+  mmdc --version                   # the check every install
+                                   # must pass (lab: 12.2.0)
+  mmdc --help                      # the full option list
+                                   # (33 lines in 12.2.0)
+
+THE SANDBOX FIX (chapters 3, 15)
+--------------------------------------------------------------------
+  # puppeteer-config.json:
+  #   {"args":["--no-sandbox","--disable-setuid-sandbox"]}
+  mmdc -p puppeteer-config.json -i <in>.mmd -o <out>.svg
+                                   # without -p, Chromium as
+                                   # root refuses: "Running as
+                                   # root without --no-sandbox
+                                   # is not supported"
+
+FIRST RENDER (chapter 4)
+--------------------------------------------------------------------
+  mmdc -p puppeteer-config.json -i flowchart-basic.mmd -o flowchart-basic.svg
+  mmdc -p puppeteer-config.json -i flowchart-basic.mmd -o flowchart-basic.png
+                                   # the output ending chooses
+                                   # the format: svg, png, pdf
+
+BACKGROUNDS, SCALE, SIZE (chapters 11, 15)
+--------------------------------------------------------------------
+  mmdc -p puppeteer-config.json -i <in>.mmd -o <out>.png -b transparent
+                                   # no white box; 'white' is
+                                   # the default
+  mmdc -p puppeteer-config.json -i <in>.mmd -o <out>.png -s 2
+                                   # twice the scale: the lab's
+                                   # 252x799 became 504x1598
+  mmdc -p puppeteer-config.json -i <in>.mmd -o <out>.png --size 800
+                                   # cap the largest dimension
+                                   # (named from --help;
+                                   # -s was the measured one)
+  # there is NO -w or -H in this
+  # version's --help
+
+THEMES (chapters 6, 11)
+--------------------------------------------------------------------
+  mmdc -p puppeteer-config.json -i <in>.mmd -o <out>.svg -t dark
+                                   # theme from outside; the
+                                   # page background stays -b's
+                                   # job. Names in 12.2.0:
+                                   # default forest dark
+                                   # neutral base neo neo-dark
+                                   # redux and family
+  # or carry it in the source:
+  #   ---
+  #   config:
+  #     theme: forest
+  #   ---
+
+PDF AND MARKDOWN (chapter 11)
+--------------------------------------------------------------------
+  mmdc -p puppeteer-config.json -i <in>.mmd -o <out>.pdf
+                                   # a real PDF (%PDF-1.4)
+  mmdc -p puppeteer-config.json -i page.md -o page-out.md
+                                   # finds every mermaid fence,
+                                   # renders each, replaces it
+                                   # with an image link
+
+THE FAMILIES THE LAB RENDERED (chapters 5-9)
+--------------------------------------------------------------------
+  flowchart TD | LR | RL | BT     # nodes, edges, subgraphs
+  sequenceDiagram                  # participants, messages
+  classDiagram                     # classes, relations
+  stateDiagram-v2                  # states, transitions
+  erDiagram                        # tables, keys, relations
+  gantt                            # tasks against dates
+  pie                              # parts of one whole
+  journey                          # scored experience steps
+  gitGraph                         # commits, branches, merges

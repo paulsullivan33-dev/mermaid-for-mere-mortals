@@ -1,0 +1,7 @@
+flowchart TD
+    A[Reader asks for a book] --> B{Is it on the shelf?}
+    B -->|Yes| C[Check the book out]
+    B -->|No| D[Place a hold]
+    C --> E[Reader takes the book home]
+    D --> F[Reader is notified when it arrives]
+    F --> C

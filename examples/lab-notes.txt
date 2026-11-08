@@ -1,0 +1,46 @@
+The lab — one npm install, fifteen sources, real renders
+====================================================================
+
+The lab is Mermaid as its project ships it for the command
+line: @mermaid-js/mermaid-cli 12.2.0, installed with
+npm install @mermaid-js/mermaid-cli mermaid on Node v24.22.1
+into a scratch project (the mermaid library package alongside
+was 12.3.0; the CLI's own package declares mermaid ^12.2.0).
+Nothing was installed system-wide. Rendering ran the
+Puppeteer-downloaded Chromium 156 with --no-sandbox, because
+this sandbox runs as root and Chromium refuses otherwise —
+the refusal, verbatim, is transcript t07. On disk after the
+install: node_modules 449 MB, Chromium cache 676 MB.
+
+  * The fixtures (mermaid-lab/diagrams/): two invented
+    systems. A library book-lending flow — flowchart in plain,
+    directional, shapes, styled, subgraph, and themed forms;
+    sequence, class, state, and ER diagrams of the same
+    library; a pie of its collection; a journey of borrowing.
+    And a community radio station's request line — a sequence
+    diagram, a left-to-right flow, and a Gantt chart of its
+    Saturday schedule build. Plus a git graph of an invented
+    documentation history. Fifteen .mmd sources in all.
+
+  * Every source was rendered to SVG and PNG (t03); the
+    outputs sit beside the sources. SVGs were checked for a
+    real <svg> root and no error text, and source labels were
+    found in the rendered SVG text (t06). The styled source's
+    six named colours are all present in its SVG (t05), and
+    the forest frontmatter changed the render's font stack.
+
+  * CLI measurements (t01, t02): the basic flow's PNG at the
+    default scale is 252 x 799; at -s 2 it is 504 x 1598,
+    exactly double. -b transparent rendered; -t dark changed
+    node colours but not the white page background. A .pdf
+    output begins %PDF-1.4. A Markdown file's single mermaid
+    fence was found, rendered, and replaced by an image link.
+
+  * Failures kept on record: the no-sandbox launch refusal
+    (t07), and a deliberate missing-brace source whose parse
+    error names line 3 for a mistake on line 2 (t04) — the
+    working example of the limits chapter's "cryptic errors".
+
+  * Plan A was achieved in full: no diagram in this guide is
+    parse-only. Rendered outputs are in the repository, not
+    described from memory.

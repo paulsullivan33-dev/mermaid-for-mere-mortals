@@ -1,0 +1,16 @@
+erDiagram
+    READER ||--o{ LOAN : holds
+    BOOK ||--o{ LOAN : "appears in"
+    READER {
+        string cardNumber PK
+        string name
+    }
+    BOOK {
+        string isbn PK
+        string title
+        string author
+    }
+    LOAN {
+        date checkoutDate
+        date dueDate
+    }

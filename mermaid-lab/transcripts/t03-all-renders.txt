@@ -1,0 +1,81 @@
+t03 - batch render: every .mmd in mermaid-lab/diagrams to .svg and .png
+command pattern: mmdc -p puppeteer-config.json -i <name>.mmd -o <name>.svg / .png
+class-library.svg: Generating single mermaid chart
+class-library.png: Generating single mermaid chart
+er-library.svg: Generating single mermaid chart
+er-library.png: Generating single mermaid chart
+flowchart-basic.svg: Generating single mermaid chart
+flowchart-basic.png: Generating single mermaid chart
+flowchart-directions.svg: Generating single mermaid chart
+flowchart-directions.png: Generating single mermaid chart
+flowchart-shapes.svg: Generating single mermaid chart
+flowchart-shapes.png: Generating single mermaid chart
+flowchart-styled.svg: Generating single mermaid chart
+flowchart-styled.png: Generating single mermaid chart
+flowchart-subgraph.svg: Generating single mermaid chart
+flowchart-subgraph.png: Generating single mermaid chart
+flowchart-themed.svg: Generating single mermaid chart
+flowchart-themed.png: Generating single mermaid chart
+gantt-radio.svg: Generating single mermaid chart
+gantt-radio.png: Generating single mermaid chart
+gitgraph-docs.svg: Generating single mermaid chart
+gitgraph-docs.png: Generating single mermaid chart
+journey-reader.svg: Generating single mermaid chart
+journey-reader.png: Generating single mermaid chart
+pie-collection.svg: Generating single mermaid chart
+pie-collection.png: Generating single mermaid chart
+sequence-lending.svg: Generating single mermaid chart
+sequence-lending.png: Generating single mermaid chart
+sequence-radio.svg: Generating single mermaid chart
+sequence-radio.png: Generating single mermaid chart
+state-book.svg: Generating single mermaid chart
+state-book.png: Generating single mermaid chart
+results:
+total 2904
+drwxrwx--- 1 root root   1656 Nov  7 22:12 .
+drwxrwx--- 1 root root     80 Nov  7 22:12 ..
+-rw-rw---- 1 root root    411 Nov  7 22:07 class-library.mmd
+-rw-rw---- 1 root root  20913 Nov  7 22:12 class-library.png
+-rw-rw---- 1 root root 194745 Nov  7 22:12 class-library.svg
+-rw-rw---- 1 root root    292 Nov  7 22:07 er-library.mmd
+-rw-rw---- 1 root root  19997 Nov  7 22:12 er-library.png
+-rw-rw---- 1 root root 205818 Nov  7 22:12 er-library.svg
+-rw-rw---- 1 root root    237 Nov  7 22:07 flowchart-basic.mmd
+-rw-rw---- 1 root root  20131 Nov  7 22:12 flowchart-basic.png
+-rw-rw---- 1 root root 202851 Nov  7 22:12 flowchart-basic.svg
+-rw-rw---- 1 root root    255 Nov  7 22:07 flowchart-directions.mmd
+-rw-rw---- 1 root root  11017 Nov  7 22:12 flowchart-directions.png
+-rw-rw---- 1 root root 288281 Nov  7 22:12 flowchart-directions.svg
+-rw-rw---- 1 root root    306 Nov  7 22:07 flowchart-shapes.mmd
+-rw-rw---- 1 root root  13479 Nov  7 22:12 flowchart-shapes.png
+-rw-rw---- 1 root root 246359 Nov  7 22:12 flowchart-shapes.svg
+-rw-rw---- 1 root root    415 Nov  7 22:07 flowchart-styled.mmd
+-rw-rw---- 1 root root  17122 Nov  7 22:12 flowchart-styled.png
+-rw-rw---- 1 root root 200936 Nov  7 22:12 flowchart-styled.svg
+-rw-rw---- 1 root root    251 Nov  7 22:09 flowchart-subgraph.mmd
+-rw-rw---- 1 root root  14838 Nov  7 22:12 flowchart-subgraph.png
+-rw-rw---- 1 root root 200292 Nov  7 22:12 flowchart-subgraph.svg
+-rw-rw---- 1 root root    159 Nov  7 22:07 flowchart-themed.mmd
+-rw-rw---- 1 root root  12980 Nov  7 22:12 flowchart-themed.png
+-rw-rw---- 1 root root  12640 Nov  7 22:12 flowchart-themed.svg
+-rw-rw---- 1 root root    367 Nov  7 22:07 gantt-radio.mmd
+-rw-rw---- 1 root root  19090 Nov  7 22:12 gantt-radio.png
+-rw-rw---- 1 root root  10454 Nov  7 22:12 gantt-radio.svg
+-rw-rw---- 1 root root    213 Nov  7 22:07 gitgraph-docs.mmd
+-rw-rw---- 1 root root  12543 Nov  7 22:12 gitgraph-docs.png
+-rw-rw---- 1 root root  10027 Nov  7 22:12 gitgraph-docs.svg
+-rw-rw---- 1 root root    271 Nov  7 22:07 journey-reader.mmd
+-rw-rw---- 1 root root  25899 Nov  7 22:12 journey-reader.png
+-rw-rw---- 1 root root 368563 Nov  7 22:12 journey-reader.svg
+-rw-rw---- 1 root root    143 Nov  7 22:07 pie-collection.mmd
+-rw-rw---- 1 root root  39748 Nov  7 22:12 pie-collection.png
+-rw-rw---- 1 root root   5119 Nov  7 22:12 pie-collection.svg
+-rw-rw---- 1 root root    462 Nov  7 22:07 sequence-lending.mmd
+-rw-rw---- 1 root root  31741 Nov  7 22:12 sequence-lending.png
+-rw-rw---- 1 root root 195432 Nov  7 22:12 sequence-lending.svg
+-rw-rw---- 1 root root    248 Nov  7 22:07 sequence-radio.mmd
+-rw-rw---- 1 root root  22808 Nov  7 22:12 sequence-radio.png
+-rw-rw---- 1 root root 192090 Nov  7 22:12 sequence-radio.svg
+-rw-rw---- 1 root root    291 Nov  7 22:07 state-book.mmd
+-rw-rw---- 1 root root  20631 Nov  7 22:12 state-book.png
+-rw-rw---- 1 root root 211702 Nov  7 22:12 state-book.svg

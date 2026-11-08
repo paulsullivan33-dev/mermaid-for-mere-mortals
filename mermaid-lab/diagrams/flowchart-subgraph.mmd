@@ -1,0 +1,9 @@
+flowchart TD
+    subgraph Desk["At the desk"]
+        A[Ask for the book] --> B[Search the catalogue]
+    end
+    subgraph Shelf["At the shelf"]
+        C[Fetch the book] --> D[Bring it to the desk]
+    end
+    B --> C
+    D --> E[Check the book out]

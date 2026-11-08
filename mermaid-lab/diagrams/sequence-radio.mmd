@@ -1,0 +1,8 @@
+sequenceDiagram
+    participant Listener
+    participant Host
+    participant Playlist
+    Listener->>Host: Phones in a song request
+    Host->>Playlist: Looks up the song
+    Playlist-->>Host: Found, track 12
+    Host-->>Listener: Playing it next

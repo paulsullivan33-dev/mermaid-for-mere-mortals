@@ -1,0 +1,15 @@
+t07 - mmdc without the Puppeteer --no-sandbox config, in this sandbox
+command: mmdc -i pie-collection.mmd -o nosandbox.svg   (no -p flag)
+Generating single mermaid chart
+
+Error: Failed to launch the browser process:  Code: 1
+
+stderr:
+[1107/221355.747443:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:103] Running as root without --no-sandbox is not supported. See https://crbug.com/638180.
+
+TROUBLESHOOTING: https://pptr.dev/troubleshooting
+pipeline first-command exit: 1
+ls: cannot access 'cli-tests/nosandbox.svg': No such file or directory
+--- sizes on disk after npm install @mermaid-js/mermaid-cli mermaid:
+node_modules: 449M
+puppeteer Chromium cache (~/.cache/puppeteer): 676M, browser: linux-156.0.8078.47

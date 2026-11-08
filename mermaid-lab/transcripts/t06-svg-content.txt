@@ -1,0 +1,11 @@
+t06 - the pictures contain the words from the sources
+flowchart-basic.svg contains 'Is it on the shelf?': 1
+flowchart-basic.svg contains 'Place a hold': 1
+sequence-radio.svg contains 'Phones in a song request': 1
+sequence-lending.svg contains 'due in 3 weeks': 1
+class-library.svg contains 'cardNumber': 1
+state-book.svg contains 'Overdue': 1
+pie-collection.svg contains 'Fiction': 1
+gantt-radio.svg contains 'Collect requests': 1
+journey-reader.svg contains 'Walk to the shelf': 1
+gitgraph-docs.svg contains 'Fix wording': 1

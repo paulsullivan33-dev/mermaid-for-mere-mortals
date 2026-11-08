@@ -1,0 +1,25 @@
+t05 - themes
+--- theme choices from mmdc --help:
+choices: "base", "dark", "default", "forest", "neutral", "neo", "neo-dark", "redux", "redux-dark", "redux-color", "redux-dark-color", "null")
+--- frontmatter theme forest (flowchart-themed.mmd) SVG style head:
+font-family:"trebuchet ms",verdana,arial,sans-serif
+font-family:"Recursive Variable",arial,sans-serif
+--- CLI -t dark render: first node fill colours differ from default:
+fill:#000
+fill:#000000
+fill:#1f2020
+fill:#F9FFFE
+fill:#a44141
+default:
+fill:#000
+fill:#000000
+fill:#22D3EE
+fill:#28253D
+fill:#2DD4BF
+--- styled diagram colours present in flowchart-styled.svg:
+dbeafe: 1 occurrence(s)
+dcfce7: 1 occurrence(s)
+fef9c3: 1 occurrence(s)
+fee2e2: 1 occurrence(s)
+1d4ed8: 1 occurrence(s)
+15803d: 1 occurrence(s)

@@ -1,0 +1,9 @@
+stateDiagram-v2
+    [*] --> OnShelf
+    OnShelf --> OnLoan : checked out
+    OnLoan --> OnShelf : returned
+    OnLoan --> Overdue : due date passes
+    Overdue --> OnShelf : returned late
+    OnShelf --> InRepair : damaged
+    InRepair --> OnShelf : repaired
+    OnShelf --> [*] : withdrawn

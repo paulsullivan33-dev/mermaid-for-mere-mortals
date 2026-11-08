@@ -1,0 +1,14 @@
+sequenceDiagram
+    actor Reader
+    participant Desk as Front Desk
+    participant Catalogue
+    participant Shelf
+    Reader->>+Desk: Asks for a book by title
+    Desk->>Catalogue: Search by title
+    Catalogue-->>Desk: Shelf mark B-14
+    Desk->>Shelf: Fetch the book
+    activate Shelf
+    Shelf-->>Desk: Book in hand
+    deactivate Shelf
+    Note over Desk,Reader: The loan is recorded before handover
+    Desk-->>-Reader: Here is your book, due in 3 weeks

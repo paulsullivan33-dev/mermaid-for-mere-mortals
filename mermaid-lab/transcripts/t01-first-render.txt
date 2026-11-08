@@ -1,0 +1,8 @@
+t01 - first render of flowchart-basic
+command: mmdc -p puppeteer-config.json -i flowchart-basic.mmd -o flowchart-basic.svg
+command: mmdc -p puppeteer-config.json -i flowchart-basic.mmd -o flowchart-basic.png
+-rw-rw---- 1 root root    237 Nov  7 22:07 /home/hatch/workspace/mermaid-for-mere-mortals/mermaid-lab/diagrams/flowchart-basic.mmd
+-rw-rw---- 1 root root  20131 Nov  7 22:12 /home/hatch/workspace/mermaid-for-mere-mortals/mermaid-lab/diagrams/flowchart-basic.png
+-rw-rw---- 1 root root 202851 Nov  7 22:12 /home/hatch/workspace/mermaid-for-mere-mortals/mermaid-lab/diagrams/flowchart-basic.svg
+PNG dimensions: 252 x 799
+viewBox="4.5 4 251.5 799"

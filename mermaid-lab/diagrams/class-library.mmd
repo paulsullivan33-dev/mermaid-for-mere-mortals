@@ -1,0 +1,20 @@
+classDiagram
+    class Book {
+        +String title
+        +String author
+        +String isbn
+        +isOnLoan()
+    }
+    class Reader {
+        +String name
+        +String cardNumber
+        +borrow(Book)
+        +returnBook(Book)
+    }
+    class Loan {
+        +Date checkoutDate
+        +Date dueDate
+        +isOverdue()
+    }
+    Reader "1" --> "*" Loan : holds
+    Book "1" --> "*" Loan : appears in

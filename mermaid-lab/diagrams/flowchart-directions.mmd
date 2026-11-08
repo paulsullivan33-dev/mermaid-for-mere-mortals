@@ -1,0 +1,7 @@
+flowchart LR
+    Start([Request line opens]) --> Take[Take the request]
+    Take --> Check{In the playlist?}
+    Check -->|Yes| Queue[Queue the song]
+    Check -->|No| Suggest[Suggest an alternative]
+    Suggest --> Queue
+    Queue --> Play([Song plays])
